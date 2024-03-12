@@ -1,0 +1,41 @@
+.navigation {
+    width: 300px;
+    height: 100vh;
+    background-color: #353232;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0 15px 15px;
+    position: absolute;
+    left: -255px;
+    transition: all 400ms;
+    &:hover{
+        left: 0px;
+    }
+    &:hover &__label{
+        opacity: 0;
+    }
+    &__label {
+        transform: rotate(90deg);
+        text-transform: uppercase;
+        margin: 0;
+        height: 15px;
+        transition: all 400ms;
+    }
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    &__item {}
+    &__text {
+        font-size: 18px;
+        line-height: 24px;
+    }
+}
